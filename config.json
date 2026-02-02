@@ -1,0 +1,7 @@
+{
+    "gemini_api_key": "",
+    "use_dictionary_filter": true,
+    "use_gemini_correction": true,
+    "notes": "ใส่ API Key ของ Gemini ในช่อง gemini_api_key (รับได้จาก https://aistudio.google.com/app/apikey)",
+    "gemini_model": "gemini-2.5-flash"
+}

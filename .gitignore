@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+.DS_Store
+.env
+venv/
+*.mp4
+*.mp3
+*.mov
+*.srt
+!verify_fix.py
