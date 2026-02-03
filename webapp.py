@@ -882,7 +882,7 @@ HTML_TEMPLATE = """
                
                <!-- Option 1: Character Limit -->
                <div style="margin-bottom: 8px;">
-                   <input type="radio" id="mode_chars" name="split_mode" value="chars" checked onchange="toggleMode()">
+                   <input type="radio" id="mode_chars" name="split_mode" value="chars" onchange="toggleMode()">
                    <label for="mode_chars">Split by Character Limit (ตัดตามจำนวนคำ)</label>
                    <div id="char_options" style="margin-left: 25px; margin-top: 5px; color: #555;">
                         Max: <input type="number" id="max" value="25" style="width:50px" oninput="saveState()"> 
@@ -892,7 +892,7 @@ HTML_TEMPLATE = """
 
                <!-- Option 2: Speech Rhythm -->
                <div>
-                   <input type="radio" id="mode_rhythm" name="split_mode" value="rhythm" onchange="toggleMode()">
+                   <input type="radio" id="mode_rhythm" name="split_mode" value="rhythm" checked onchange="toggleMode()">
                    <label for="mode_rhythm" style="color:#E91E63; font-weight:bold;">Split by Speech Rhythm (ตัดตามจังหวะพูด)</label>
                </div>
             </div>
@@ -1176,6 +1176,9 @@ HTML_TEMPLATE = """
             el.style.height = 'auto';
             el.style.height = el.scrollHeight + 'px';
         }
+        
+        // Initialize UI State
+        toggleMode();
     </script>
 </body>
 </html>
