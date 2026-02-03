@@ -858,7 +858,7 @@ HTML_TEMPLATE = """
         <div id="upload-section">
             <div class="input-group">
                 <button class="sec-btn" onclick="document.getElementById('file').click()" id="file-label" style="width:100%">1. เลือกวิดีโอ (Video)</button>
-                <input type="file" id="file" accept=".srt,.mp4,.mov,.mp3" style="display:none" onchange="document.getElementById('file-label').innerText = '✅ ' + this.files[0].name">
+                <input type="file" id="file" accept=".srt,.mp4,.mov,.mp3,.wav,.m4a,.flac,.ogg,.webm,.mkv,.aac" style="display:none" onchange="document.getElementById('file-label').innerText = '✅ ' + this.files[0].name">
             </div>
 
             <div class="ref-box">
